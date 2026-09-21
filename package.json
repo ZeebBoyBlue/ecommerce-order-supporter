@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce-order-supporter",
+  "version": "0.1.0",
+  "description": "Resolves ecommerce Where-Is-My-Order (WISMO) support inquiries, cross-checks real-time carrier delivery milestones, flags delivery exceptions, and stages customer update drafts without helpdesk seat taxes.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build:app": "bun build apps/wismo-triage/src/main.tsx --outdir apps/wismo-triage/dist --target browser --format esm --jsx-factory=h --jsx-fragment=Fragment --jsx-import-source=preact"
+  },
+  "dependencies": {
+    "preact": "10.29.8"
+  },
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.10.0"
+  },
+  "vellum": {}
+}
